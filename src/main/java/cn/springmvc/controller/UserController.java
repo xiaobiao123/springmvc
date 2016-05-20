@@ -16,7 +16,7 @@ public class UserController{
 	@Autowired
 	private UserService userService;
 	@RequestMapping("index")
-	@Cacheable(value = {"user"}, key="#id")
+	@Cacheable(value = {"user"}, key="all")
 	public String index() {
 		
 		User user=new User();
@@ -27,6 +27,7 @@ public class UserController{
 		return "index";
 
 	}
+	
 
 	public static void main(String[] args) {
 		

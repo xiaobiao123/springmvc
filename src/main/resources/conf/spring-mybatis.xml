@@ -83,7 +83,7 @@
 <!--  缓存    -->
     <cache:annotation-driven/>
     <bean id="ehcache"  class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean"
-          p:config-location="classpath:conf/ehcache.xml"
+          p:config-location="classpath:conf/ehcache_cluster.xml"
           p:shared="true"/>
     <bean id="cacheManager"
           class="org.springframework.cache.ehcache.EhCacheCacheManager" p:cache-manager-ref="ehcache">

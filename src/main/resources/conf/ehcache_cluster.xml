@@ -27,9 +27,9 @@
     Ehcache comes with a built-in RMI-based distribution system with two means of discovery of  
     CacheManager peers participating in the cluster:  
      -->
-    
+     <diskStore path="C:\test" /> 
     <cacheManagerPeerProviderFactory class= "net.sf.ehcache.distribution.RMICacheManagerPeerProviderFactory"  
-                                     properties="peerDiscovery=manual,rmiUrls=//localhost:8080/user"/>  
+                                     properties="peerDiscovery=manual,rmiUrls=//localhost:7070/springmvc"/>  
   
     <cacheManagerPeerListenerFactory  
             class="net.sf.ehcache.distribution.RMICacheManagerPeerListenerFactory"  
